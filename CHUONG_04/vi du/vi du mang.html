@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = new Array(1, 2, 4, 5, 9, 6);
+
+document.write(arr.join() + '<br>');
+
+// length đây là thuộc tính trong mảng trả về số lượng phần tử đang có trong mảng
+document.write(arr.length + '<br>');
+
+// join gộp tất cả các phần tử có trong mảng thành một chuỗi 
+document.write(arr.join('-') + '<br>');
+
+// push tác dụng thêm một hoặc nhiều phần tử vào cuối mảng
+arr.push(7);
+document.write(arr.join() + '<br>');
+
+// pop xoá phần tử cuối trong mảng
+arr.pop();
+document.write(arr.join() + '<br>');
+
+// unshift 
+arr.unshift(7);
+document.write(arr.join() + '<br>');
+
+// shift
+arr.shift();
+document.write(arr.join() + '<br>');
+
+// slice
+document.write(arr.slice(3) + '<br>');
+
+// sort
+document.write(arr.sort() + '<br>');
+
+// reverse
+document.write(arr.reverse() + '<br>');
+
+
+    </script>
+</body>
+</html>

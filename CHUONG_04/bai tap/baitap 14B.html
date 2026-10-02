@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bt4,14b</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>Hãy nhập hai số và click vào nút tính tổng</h2>
+    <p>so hang 1: </p><input type="text" name="sohang1"id="sohang1" > 
+    <p>so hang 2: </p><input type="text"  name="sohang2"id="sohang2"> 
+    <p>ket qua: </p><input type="text"  name="ketqua"id="ketqua">
+    <input type="radio" name="operation" id="Tổng" value="cong" onclick="cong()">
+    <label for="cong">Cộng</label>
+    <input type="radio" name="operation" id="Hiệu" value="tru" onclick="tru()"> 
+    <label for="tru">Trừ</label>
+    <input type="radio" name="operation" id="Tích" value="nhan" onclick="nhan()">
+    <label for="nhan">Nhân</label>
+    <input type="radio" name="operation" id="Thương" value="chia" onclick="chia()">
+    <label for="chia">Chia</label>
+    <script>
+        function cong()
+        {
+            let so1 = parseFloat(document.getElementsByName("sohang1")[0].value);
+            let so2 = parseFloat(document.getElementsByName("sohang2")[0].value);
+            let cong = so1 + so2;
+            document.getElementsByName("ketqua")[0].value = cong;
+        }
+        function tru()
+        {
+            let so1 = parseFloat(document.getElementsByName("sohang1")[0].value);
+            let so2 = parseFloat(document.getElementsByName("sohang2")[0].value);
+            let tru = so1 - so2;
+            document.getElementsByName("ketqua")[0].value = tru;
+        }
+        function nhan()
+        {
+            let so1 = parseFloat(document.getElementsByName("sohang1")[0].value);
+            let so2 = parseFloat(document.getElementsByName("sohang2")[0].value);
+            let nhan = so1 * so2;
+            document.getElementsByName("ketqua")[0].value = nhan;
+        }
+        function chia()
+        {
+            let so1 = parseFloat(document.getElementsByName("sohang1")[0].value);
+            let so2 = parseFloat(document.getElementsByName("sohang2")[0].value);
+            let chia = so1 / so2;
+            document.getElementsByName("ketqua")[0].value = chia;
+        }
+    </script>
+</body>
+</html>

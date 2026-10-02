@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bt4,17a</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            function doimau()
+            {
+                document.body.style.backgroundColor = document.querySelector('select[name="mau"]').value;
+            }
+        </script>
+        <h1> Bạn hãy chọn màu nền: </h1>
+        <select name="mau" onchange="doimau()";>
+            <option value="white"> trang </option>
+            <option value="red"> do </option>
+            <option value="blue"> xanh </option>
+            <option value="brown"> nau </option>
+            <option value="yellow"> vang </option>
+        </select>
+    </body>
+</html>
